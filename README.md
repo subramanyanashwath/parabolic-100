@@ -2,6 +2,8 @@
 
 **A deployment-judgment gym.** One hundred worked examples of the judgment that AI deployment roles actually test — trained the way NeetCode trains algorithms, calibrated against reality instead of an answer key.
 
+Role tags throughout — enterprise seats and frontier labs alike, Microsoft MAI included — are lenses showing where each judgment pattern transfers: a taxonomy of the industry, not a job-search list.
+
 Everything runs in your browser. No accounts, no backend, no API keys. Your reps, notes, and calibration record live in localStorage and export to a single JSON file.
 
 ---

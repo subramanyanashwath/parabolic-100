@@ -318,7 +318,7 @@ P100.PROBLEMS.push(
   secondaryLens: "Deployment",
   archetype: "Builder",
   secondaryArchetype: "Maintainer",
-  targetRoles: ["CAPE SCPM", "OpenAI FDE", "Anthropic TPM Safeguards & Evals"],
+  targetRoles: ["CAPE SCPM", "OpenAI FDE", "Anthropic TPM Safeguards & Evals", "MSFT MAI Evals Eng"],
   tags: ["distribution-shift", "production-evals", "golden-sets", "monitoring"],
   prompt:
     "A contract-review agent scored 92% on its curated test set before launch. Three weeks into production, legal ops reports \"constant misses.\" A quick sample of live traffic suggests accuracy around 71%. The engineering team's position is that the model is fine and \"users are feeding it documents it was never meant for.\" Both sides are citing numbers. Who is right, and what do you do?",
@@ -369,7 +369,7 @@ P100.PROBLEMS.push(
   secondaryLens: "Platform",
   archetype: "Maintainer",
   secondaryArchetype: "Sweeper",
-  targetRoles: ["CAPE SCPM", "Anthropic TPM Safeguards & Evals", "OpenAI DPM (Codex)"],
+  targetRoles: ["CAPE SCPM", "Anthropic TPM Safeguards & Evals", "OpenAI DPM (Codex)", "MSFT MAI Evals Eng"],
   tags: ["eval-maintenance", "golden-sets", "coverage", "measurement-debt"],
   prompt:
     "An internal-helpdesk agent has been evaluated against the same 300-item golden set for eleven months, scoring a steady 87–90. Meanwhile CSAT has dropped 15 points in two quarters. A new laptop lineup, a VPN migration, and three policy changes have shipped — none are represented in the set. Engineering cites the 89 as proof the agent is fine. Who is right, and what do you do?",

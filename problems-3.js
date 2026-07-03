@@ -63,7 +63,7 @@ P100.PROBLEMS.push(
   secondaryLens: "Eval",
   archetype: "Builder",
   secondaryArchetype: "Maintainer",
-  targetRoles: ["CAPE SCPM", "OpenAI Deployment Eng"],
+  targetRoles: ["CAPE SCPM", "OpenAI Deployment Eng", "MSFT MAI Strategy & Ops"],
   tags: ["rollout", "rings", "gates", "works-council", "support-scaling"],
   prompt:
     "After a lighthouse win, a global insurer commits Copilot plus three agents to 20,000 employees across 14 countries. The CIO wants \"everyone live in Q1.\" EU works-council consultations haven't started, the helpdesk is 40 people, telemetry exists only for the lighthouse group, and training is a deck. You're asked for the deployment plan. Design it.",
@@ -165,7 +165,7 @@ P100.PROBLEMS.push(
   secondaryLens: "Altitude",
   archetype: "Sweeper",
   secondaryArchetype: "Grower",
-  targetRoles: ["CAPE SCPM", "Anthropic TPM API Platform"],
+  targetRoles: ["CAPE SCPM", "Anthropic TPM API Platform", "MSFT MAI Strategy & Ops"],
   tags: ["roadmap-pressure", "negotiation", "precedent", "need-decomposition"],
   prompt:
     "Your largest account — $40M ARR, renewal in five months — demands on-premises inference for one workload class as a renewal condition. The sales VP wants a signed roadmap commitment letter this week. Engineering estimates 18 months and calls it strategy distortion. The CVP asks for your recommendation. What is it?",
@@ -267,7 +267,7 @@ P100.PROBLEMS.push(
   secondaryLens: "Market",
   archetype: "Maintainer",
   secondaryArchetype: "Sweeper",
-  targetRoles: ["Anthropic TPM Cloud Inference", "Anthropic TPM Inference Perf", "CAPE SCPM"],
+  targetRoles: ["Anthropic TPM Cloud Inference", "Anthropic TPM Inference Perf", "CAPE SCPM", "MSFT MAI Strategy & Ops"],
   tags: ["capacity", "allocation", "slo", "scarcity", "sales-alignment"],
   prompt:
     "A new model release triples API demand in ten days. GPU capacity is constrained for at least a quarter. Enterprise customers with contractual capacity are hitting rate limits, self-serve is degrading, sales is still signing deals with capacity promises, and exceptions are being granted to whoever escalates loudest. You own capacity allocation. Stabilize it.",
@@ -318,7 +318,7 @@ P100.PROBLEMS.push(
   secondaryLens: "Platform",
   archetype: "Builder",
   secondaryArchetype: "Maintainer",
-  targetRoles: ["Anthropic TPM Safeguards & Evals", "CAPE SCPM"],
+  targetRoles: ["Anthropic TPM Safeguards & Evals", "CAPE SCPM", "MSFT MAI Evals Eng"],
   tags: ["safety-evals", "gates", "flakiness", "developer-experience"],
   prompt:
     "The model-ship gate includes a safety eval suite: fourteen hours to run, ~8% flake rate. Last quarter there were two near-misses — teams shipping on stale results or re-running until green. Researchers now openly argue the suite should be advisory-only. Safeguards insists it stays mandatory. You own the eval infrastructure, and both sides think you're on their side. What do you do?",
@@ -369,7 +369,7 @@ P100.PROBLEMS.push(
   secondaryLens: "Customer",
   archetype: "Grower",
   secondaryArchetype: "Sweeper",
-  targetRoles: ["CAPE SCPM", "Anthropic TPM Cloud Inference"],
+  targetRoles: ["CAPE SCPM", "Anthropic TPM Cloud Inference", "MSFT MAI Strategy & Ops"],
   tags: ["capex", "market-calibration", "bubble", "falsifiers"],
   prompt:
     "At a QBR, your customer's CFO — who reads earnings calls — asks: \"Hyperscalers are guiding to $400B+ of combined AI capex. If this is a bubble, are we overpaying for compute that's about to get cheap? Should we pause the agent program and wait it out?\" The room goes quiet. Answer the question.",

@@ -45,6 +45,8 @@ P100.META = {
     "Anthropic TPM Safeguards & Evals",
     "Anthropic TPM API Platform",
     "Anthropic TPM Apps Platform",
+    "MSFT MAI Evals Eng",
+    "MSFT MAI Strategy & Ops",
   ],
 
   /* Standardized rubric dimensions. Every problem grades the same six, 0–3 each.
@@ -184,7 +186,7 @@ P100.PROBLEMS = [
   secondaryLens: "Architecture",
   archetype: "Builder",
   secondaryArchetype: "Sweeper",
-  targetRoles: ["CAPE SCPM", "OpenAI FDE", "Anthropic TPM Safeguards & Evals"],
+  targetRoles: ["CAPE SCPM", "OpenAI FDE", "Anthropic TPM Safeguards & Evals", "MSFT MAI Evals Eng"],
   tags: ["rag", "evals", "retrieval", "failure-taxonomy"],
   prompt:
     "A partner team has built a RAG agent over a customer's policy documents. They measure answer fluency and user satisfaction — nothing else. Complaints about wrong answers are rising, and the team's proposed fix is to swap to a newer model, which \"demos better.\" Retrieval quality, grounding, citation accuracy, and permission-aware access have never been measured. What is missing, and what do you do?",
@@ -235,7 +237,7 @@ P100.PROBLEMS = [
   secondaryLens: "Platform",
   archetype: "Maintainer",
   secondaryArchetype: "Builder",
-  targetRoles: ["Anthropic TPM Cloud Inference", "Anthropic TPM API Platform", "CAPE SCPM"],
+  targetRoles: ["Anthropic TPM Cloud Inference", "Anthropic TPM API Platform", "CAPE SCPM", "MSFT MAI Strategy & Ops"],
   tags: ["launch-readiness", "slo", "incident-response", "partner"],
   prompt:
     "A frontier model launch is ready on the first-party API but blocked on a partner cloud: latency is unverified at projected load, capacity commitments are unsigned, and the cross-company incident escalation path is undefined. Research leadership wants a simultaneous launch this week; the partner's go-to-market team has customers queued and is applying pressure. You own launch readiness. What do you do?",

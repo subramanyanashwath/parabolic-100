@@ -31,6 +31,8 @@
     "Anthropic TPM Safeguards & Evals": "Safety gates and eval infrastructure",
     "Anthropic TPM API Platform": "Enterprise API adoption and platform gaps",
     "Anthropic TPM Apps Platform": "Agent surfaces, extensibility, governance",
+    "MSFT MAI Evals Eng": "Frontier eval infrastructure inside Microsoft AI",
+    "MSFT MAI Strategy & Ops": "Program, capacity, and strategy at MAI scale",
   };
 
   const AUTO_CHECKS = [
@@ -371,7 +373,7 @@
         <div>
           <p class="eyebrow">Deployment judgment gym</p>
           <h1>Parabolic 100</h1>
-          <p class="subhead">The deployment judgment gym for CAPE excellence and frontier-lab readiness.</p>
+          <p class="subhead">The deployment judgment gym for enterprise AI excellence and frontier-scale readiness.</p>
           <p class="lede">
             One hundred canonical AI deployment situations trained the way NeetCode trains algorithms:
             every problem drills a named judgment pattern — the sliding windows of deployment work.
@@ -453,13 +455,13 @@
         <div class="section-head">
           <p class="eyebrow">Transfer surfaces</p>
           <h2>One problem bank. Three payoffs.</h2>
-          <p>Every rep is written to make Monday at CAPE better and to compound toward frontier-lab interviews and calibrated market judgment.</p>
+          <p>Every rep is written to make Monday in the enterprise seat better and to compound toward frontier-scale judgment. Role tags are lenses on where each skill transfers — a taxonomy, not a job-search list.</p>
         </div>
         <div class="grid-3">
           <article class="card surface-card">
-            <span class="eyebrow">CAPE execution</span>
+            <span class="eyebrow">Enterprise execution</span>
             <h3>Customer deployment judgment</h3>
-            <p>Scenario discovery, agent architecture, governance, enterprise rollout, and the product feedback loop — the daily judgment calls of a CAPE SCPM, drilled until they're reflexes.</p>
+            <p>Scenario discovery, agent architecture, governance, enterprise rollout, and the product feedback loop — the daily judgment calls of an enterprise AI deployment seat, drilled until they're reflexes.</p>
             <div class="roles">
               <span class="pill solid">agents</span><span class="pill solid">governance</span>
               <span class="pill solid">rollouts</span><span class="pill solid">evals</span>
@@ -468,9 +470,9 @@
           <article class="card surface-card">
             <span class="eyebrow">Frontier-lab readiness</span>
             <h3>The judgment labs hire for</h3>
-            <p>Every problem carries a frontier translation: how the same situation shows up as an OpenAI FDE or an Anthropic TPM — launch gates, capacity allocation, safeguards infrastructure, platform strategy.</p>
+            <p>Every problem carries a frontier translation: how the same situation shows up inside a frontier lab — launch gates, capacity allocation, evals infrastructure, platform strategy.</p>
             <div class="roles">
-              <span class="pill solid">OpenAI FDE</span><span class="pill solid">Anthropic TPM</span>
+              <span class="pill solid">deployment</span><span class="pill solid">evals infra</span>
               <span class="pill solid">launch readiness</span>
             </div>
           </article>
@@ -641,7 +643,7 @@
             ${PATTERNS.map(x => `<option value="${x.id}" ${bankFilter.pattern === x.id ? "selected" : ""}>${esc(x.name)}</option>`).join("")}
           </select>
           <select class="select" data-filter="role">
-            <option value="">Target role</option>
+            <option value="">Role lens</option>
             ${META.roles.map(r => `<option ${bankFilter.role === r ? "selected" : ""}>${esc(r)}</option>`).join("")}
           </select>
           <select class="select" data-filter="status">
@@ -1055,7 +1057,7 @@
 
     const roles = `
     <section class="card rail-card">
-      <h3>Role transfer</h3>
+      <h3>Where this transfers</h3>
       <div class="roles-stack">
         ${p.targetRoles.map(r => `<div><b>${esc(r)}</b><span>${esc(ROLE_NOTES[r] || "")}</span></div>`).join("")}
       </div>
@@ -1308,9 +1310,9 @@
 
     <div class="metric-grid">
       <div class="card metric-card">
-        <span>CAPE readiness</span><b>${fmtM(m.cape)}</b>
+        <span>Enterprise readiness</span><b>${fmtM(m.cape)}</b>
         <div class="bar"><i style="width:${m.cape || 0}%"></i></div>
-        <p>Avg best score on CAPE-tagged problems × √coverage. Rises with breadth, not just good days.</p>
+        <p>Avg best score on enterprise-seat problems × √coverage. Rises with breadth, not just good days.</p>
       </div>
       <div class="card metric-card">
         <span>Frontier transfer</span><b>${fmtM(m.frontier)}</b>
