@@ -275,4 +275,9 @@ P100.PATTERN_TAGS = {
   "068": ["commitment-design", "precedent-pricing"],
   "069": ["commitment-design", "altitude-switching"],
   "070": ["ask-need-decomposition", "trust-recovery"],
+  "071": ["contain-remediate-reexpand", "status-truth"],
+  "072": ["paved-road", "ask-need-decomposition"],
+  "073": ["staged-exposure", "gate-design"],
+  "074": ["commitment-design", "trust-recovery"],
+  "075": ["failure-decomposition", "instrument-first"],
 };
