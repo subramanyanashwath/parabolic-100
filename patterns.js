@@ -260,4 +260,9 @@ P100.PATTERN_TAGS = {
   "053": ["ask-need-decomposition", "evidence-shaping"],
   "054": ["portfolio-triage", "staged-exposure"],
   "055": ["instrument-first", "staged-exposure"],
+  "056": ["ownership-forcing", "gate-design"],
+  "057": ["ask-need-decomposition", "instrument-first"],
+  "058": ["bottleneck-reclassification", "portfolio-triage"],
+  "059": ["gate-design", "precedent-pricing"],
+  "060": ["gate-design", "instrument-first"],
 };
