@@ -97,6 +97,25 @@ P100.PATTERNS = [
     interview: "Governance scenarios: '200 employees are pasting data into consumer AI.' The pass reads shadow usage as demand signal and sequences containment→capability→enforcement; the fail picks a side.",
   },
 
+  {
+    id: "status-truth",
+    name: "Status Truth",
+    tier: 2,
+    move: "Make true program state cheap to see and safe to say — instruments and rituals that surface red early, and incentives that don't punish the messenger.",
+    tells: ["Green dashboards, anxious hallways", "Surprise slips near deadlines", "Status meetings that perform instead of inform"],
+    antiPattern: "Adding more reporting instead of changing the incentive — ten dashboards that all lie the same way, or shooting the first messenger and wondering why the second never came.",
+    interview: "A TPM-loop staple: 'a program you inherited was greener on paper than in reality — what did you do?' Scored on instrumenting truth and protecting its carriers, not on heroic detective work.",
+  },
+  {
+    id: "commitment-design",
+    name: "Commitment Design",
+    tier: 2,
+    move: "Structure who-promises-what-by-when across teams — explicit, dated, owned, with slip signals attached — so coordination survives without goodwill or authority.",
+    tells: ["Dependencies held together by 'they said Q2'", "No alarm fires when a promise quietly slips", "Escalations with nothing written to point at"],
+    antiPattern: "Escalating without a contract to reference — or padding your own schedule secretly, which trades one slip for systemic distrust.",
+    interview: "The influence-without-authority question in every TPM loop: the pass is a designed commitment (owner, date, slip signal, escalation trigger), not charisma or espresso diplomacy.",
+  },
+
   /* ---------- Tier 3 — Hard Calls ---------- */
   {
     id: "ownership-forcing",
@@ -211,4 +230,9 @@ P100.PATTERN_TAGS = {
   "023": ["scarcity-allocation", "precedent-pricing", "who-bears-the-risk"],
   "024": ["gate-design", "paved-road", "bottleneck-reclassification"],
   "025": ["who-bears-the-risk", "altitude-switching"],
+  "026": ["commitment-design", "ownership-forcing", "evidence-shaping"],
+  "027": ["status-truth", "instrument-first"],
+  "028": ["instrument-first", "evidence-shaping", "bottleneck-reclassification"],
+  "029": ["ownership-forcing", "evidence-shaping", "trust-recovery"],
+  "030": ["trust-recovery", "precedent-pricing", "altitude-switching"],
 };
