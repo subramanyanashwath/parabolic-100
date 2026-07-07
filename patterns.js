@@ -290,4 +290,9 @@ P100.PATTERN_TAGS = {
   "083": ["failure-decomposition", "contain-remediate-reexpand"],
   "084": ["instrument-first", "gate-design"],
   "085": ["solution-shape-matching", "ask-need-decomposition"],
+  "086": ["instrument-first", "status-truth"],
+  "087": ["portfolio-triage", "instrument-first"],
+  "088": ["instrument-first", "failure-decomposition"],
+  "089": ["status-truth", "gate-design"],
+  "090": ["ownership-forcing", "staged-exposure"],
 };
