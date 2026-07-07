@@ -270,4 +270,9 @@ P100.PATTERN_TAGS = {
   "063": ["failure-decomposition", "instrument-first"],
   "064": ["staged-exposure", "trust-recovery"],
   "065": ["failure-decomposition", "evidence-shaping"],
+  "066": ["who-bears-the-risk", "paved-road"],
+  "067": ["evidence-shaping", "precedent-pricing"],
+  "068": ["commitment-design", "precedent-pricing"],
+  "069": ["commitment-design", "altitude-switching"],
+  "070": ["ask-need-decomposition", "trust-recovery"],
 };
