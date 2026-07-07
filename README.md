@@ -200,7 +200,7 @@ All scenarios are fictional composites built from public knowledge. No proprieta
 
 ## Roadmap
 
-- **Bank: 25 → 100** worked examples against the category distribution above
+- ~~Bank: 25 → 100~~ **Complete: all 100 worked examples live**, every category at its designed target
 - **Field intake + Gnomon ledger** (the reality-anchored half of the diagram)
 - **Study mode + fading scheduler**
 - **Monthly scan**

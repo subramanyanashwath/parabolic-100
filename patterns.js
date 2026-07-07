@@ -300,4 +300,9 @@ P100.PATTERN_TAGS = {
   "093": ["ask-need-decomposition", "portfolio-triage"],
   "094": ["who-bears-the-risk", "evidence-shaping"],
   "095": ["who-bears-the-risk", "bottleneck-reclassification"],
+  "096": ["evidence-shaping", "who-bears-the-risk"],
+  "097": ["evidence-shaping", "bottleneck-reclassification"],
+  "098": ["evidence-shaping", "instrument-first"],
+  "099": ["status-truth", "instrument-first"],
+  "100": ["bottleneck-reclassification", "who-bears-the-risk"],
 };
