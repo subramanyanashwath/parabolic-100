@@ -245,4 +245,9 @@ P100.PATTERN_TAGS = {
   "038": ["bottleneck-reclassification", "instrument-first"],
   "039": ["solution-shape-matching", "portfolio-triage"],
   "040": ["staged-exposure", "gate-design"],
+  "041": ["instrument-first", "failure-decomposition"],
+  "042": ["instrument-first", "status-truth"],
+  "043": ["instrument-first", "evidence-shaping"],
+  "044": ["failure-decomposition", "gate-design"],
+  "045": ["gate-design", "instrument-first"],
 };
