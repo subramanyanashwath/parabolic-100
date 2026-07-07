@@ -265,4 +265,9 @@ P100.PATTERN_TAGS = {
   "058": ["bottleneck-reclassification", "portfolio-triage"],
   "059": ["gate-design", "precedent-pricing"],
   "060": ["gate-design", "instrument-first"],
+  "061": ["ownership-forcing", "evidence-shaping"],
+  "062": ["instrument-first", "solution-shape-matching"],
+  "063": ["failure-decomposition", "instrument-first"],
+  "064": ["staged-exposure", "trust-recovery"],
+  "065": ["failure-decomposition", "evidence-shaping"],
 };
