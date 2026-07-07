@@ -295,4 +295,9 @@ P100.PATTERN_TAGS = {
   "088": ["instrument-first", "failure-decomposition"],
   "089": ["status-truth", "gate-design"],
   "090": ["ownership-forcing", "staged-exposure"],
+  "091": ["ask-need-decomposition", "who-bears-the-risk"],
+  "092": ["who-bears-the-risk", "instrument-first"],
+  "093": ["ask-need-decomposition", "portfolio-triage"],
+  "094": ["who-bears-the-risk", "evidence-shaping"],
+  "095": ["who-bears-the-risk", "bottleneck-reclassification"],
 };
