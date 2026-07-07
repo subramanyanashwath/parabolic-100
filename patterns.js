@@ -280,4 +280,9 @@ P100.PATTERN_TAGS = {
   "073": ["staged-exposure", "gate-design"],
   "074": ["commitment-design", "trust-recovery"],
   "075": ["failure-decomposition", "instrument-first"],
+  "076": ["commitment-design", "failure-decomposition"],
+  "077": ["instrument-first", "status-truth"],
+  "078": ["failure-decomposition", "gate-design"],
+  "079": ["solution-shape-matching", "ask-need-decomposition"],
+  "080": ["solution-shape-matching", "portfolio-triage"],
 };
