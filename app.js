@@ -549,6 +549,7 @@
       <footer class="site-footer">
         <span>Local-first: attempts, scores, and review schedule live in your browser's localStorage. No accounts, no backend.</span>
         <span><a href="https://github.com/subramanyanashwath/parabolic-100" target="_blank" rel="noopener" style="text-decoration:underline">Source on GitHub ↗</a> · MIT · problems grow by PR against <a href="https://github.com/subramanyanashwath/parabolic-100/blob/main/docs/AUTHORING.md" target="_blank" rel="noopener" style="text-decoration:underline">the authoring bar</a></span>
+        <span>Why "Parabolic"? After the <a href="https://x.com/TheStalwart/status/2062167465556165115" target="_blank" rel="noopener" style="text-decoration:underline">Parabolic 7 ↗</a> — Ben Emons' name for the memory-supercycle stocks, itself a riff on the Magnificent 7. The silicon side of the supercycle got an index; the judgment side gets a gym. The 100 is the Blind-75 convention.</span>
       </footer>
     </div>`;
   }
