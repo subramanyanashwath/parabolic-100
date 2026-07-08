@@ -541,7 +541,7 @@
           <div class="card spine-card">
             <h3>Archetypes — how to act on it</h3>
             <ul>${META.archetypes.map(a => `<li><b>${esc(a.id)}</b><span>${esc(a.d)}</span></li>`).join("")}</ul>
-            <p class="small muted" style="margin-top:10px">After <a href="https://x.com/bcherny" target="_blank" rel="noopener" style="text-decoration:underline">Boris Cherny's five product archetypes ↗</a> — applied here to deployment judgment: every problem asks which mode the situation needs, because the reflexive answer is always "build more," and it's usually wrong.</p>
+            <p class="small muted" style="margin-top:10px">After <a href="https://x.com/bcherny/status/1938774061633675618" target="_blank" rel="noopener" style="text-decoration:underline">Boris Cherny's five product archetypes ↗</a> — applied here to deployment judgment: every problem asks which mode the situation needs, because the reflexive answer is always "build more," and it's usually wrong.</p>
           </div>
         </div>
       </section>
