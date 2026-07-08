@@ -364,6 +364,7 @@
           <a href="#/patterns">Patterns</a>
           <a href="#/review">Review Queue</a>
           <a href="#/progress">Progress</a>
+          <a href="https://github.com/subramanyanashwath/parabolic-100" target="_blank" rel="noopener">GitHub</a>
         </div>
         <span class="spacer"></span>
         <a class="btn btn-outline btn-sm" href="#/${cont ? "problem/" + cont : "problem/001"}">${cont ? "Continue " + cont : "Start 001"}</a>
@@ -386,7 +387,7 @@
             <a class="btn btn-outline btn-lg" href="#/bank">View Problem Bank</a>
           </div>
           <div class="hero-stats">
-            <div><span>Problems live</span><strong>${PROBLEMS.length} / 100</strong></div>
+            <div><span>Problems</span><strong>${PROBLEMS.length}</strong></div>
             <div><span>Categories</span><strong>9</strong></div>
             <div><span>Judgment patterns</span><strong>${PATTERNS.length}</strong></div>
             <div><span>Patterns proven</span><strong>${m.patternsProven}</strong></div>
@@ -449,6 +450,7 @@
             <p>Spaced repetition: weak reps come back in a day, strong ones in a month. Mastery means scoring 90+ twice, not remembering once.</p>
           </article>
         </div>
+        <p class="small muted" style="margin-top:12px;max-width:72ch">Honest mechanics: you grade yourself — against rubric descriptors written as pass/fail tests, with the adversarial critique on screen while you grade, and your predicted-vs-actual gap tracked as a first-class stat.</p>
       </section>
 
       <section class="section">
@@ -506,19 +508,23 @@
       <section class="section">
         <div class="section-head">
           <p class="eyebrow">The canon</p>
-          <h2>${PROBLEMS.length} problems live. Designed as 100.</h2>
-          <p>Nine categories mirroring the real distribution of deployment judgment — weighted toward architecture and evals, where most programs die.</p>
+          <h2>One hundred problems. Nine categories. Your coverage:</h2>
+          <p>Weighted toward architecture and evals, where most programs die. The bars are yours — they fill as you solve.</p>
         </div>
         <div class="card canon-table">
-          <div class="canon-row head"><span>Category</span><span>Live</span><span>Target</span><span></span></div>
-          ${META.categories.map(c => `
+          <div class="canon-row head"><span>Category</span><span>Solved</span><span>Of</span><span></span></div>
+          ${META.categories.map(c => {
+            const solved = PROBLEMS.filter(p => p.category === c.name && ["solved", "mastered"].includes(statusOf(p.id))).length;
+            return `
             <div class="canon-row">
               <strong>${esc(c.name)}</strong>
-              <span class="num">${catCount(c.name)}</span>
-              <span class="num muted">${c.target}</span>
-              <span class="bar"><i style="width:${Math.round(catCount(c.name) / c.target * 100)}%"></i></span>
-            </div>`).join("")}
+              <span class="num">${solved}</span>
+              <span class="num muted">${catCount(c.name)}</span>
+              <span class="bar"><i style="width:${Math.round(solved / catCount(c.name) * 100)}%"></i></span>
+            </div>`;
+          }).join("")}
         </div>
+        <p class="small muted" style="margin-top:10px">The distribution and the ~80% coverage claim behind it are documented, not asserted: <a href="https://github.com/subramanyanashwath/parabolic-100/blob/main/docs/COVERAGE.md" target="_blank" rel="noopener" style="text-decoration:underline">read the coverage map ↗</a></p>
       </section>
 
       <section class="section">
@@ -535,12 +541,14 @@
           <div class="card spine-card">
             <h3>Archetypes — how to act on it</h3>
             <ul>${META.archetypes.map(a => `<li><b>${esc(a.id)}</b><span>${esc(a.d)}</span></li>`).join("")}</ul>
+            <p class="small muted" style="margin-top:10px">After <a href="https://x.com/bcherny" target="_blank" rel="noopener" style="text-decoration:underline">Boris Cherny's five product archetypes ↗</a> — applied here to deployment judgment: every problem asks which mode the situation needs, because the reflexive answer is always "build more," and it's usually wrong.</p>
           </div>
         </div>
       </section>
 
       <footer class="site-footer">
         <span>Local-first: attempts, scores, and review schedule live in your browser's localStorage. No accounts, no backend.</span>
+        <span><a href="https://github.com/subramanyanashwath/parabolic-100" target="_blank" rel="noopener" style="text-decoration:underline">Source on GitHub ↗</a> · MIT · problems grow by PR against <a href="https://github.com/subramanyanashwath/parabolic-100/blob/main/docs/AUTHORING.md" target="_blank" rel="noopener" style="text-decoration:underline">the authoring bar</a></span>
       </footer>
     </div>`;
   }
