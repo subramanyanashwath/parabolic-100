@@ -911,7 +911,12 @@
       ${paras(p.modelAnswer)}
     </div>
 
-    <h3 class="sec-title">Self-grade the six dimensions <span class="note">0 = absent · 3 = elite</span></h3>
+    <div class="adversarial">
+      <span>Before you grade — the tempting wrong answers</span>
+      <p>${esc(p.adversarial)}</p>
+    </div>
+
+    <h3 class="sec-title">Self-grade the six dimensions <span class="note">grade against the descriptor as a literal test — 0 absent · 3 elite</span></h3>
     <div class="rubric">${rubricRows}</div>
 
     <div class="edge-row">
@@ -924,8 +929,8 @@
 
     <div class="save-strip">
       <span class="preview">${live
-        ? (graded ? `This attempt: <strong>${previewScore}</strong> / 100 · predicted ${d.predicted}` : "Grade all six dimensions and the model-edge call to save.")
-        : att ? `Saved attempt: <strong>${att.score}</strong> / 100 · predicted ${att.predicted}` : ""}</span>
+        ? (graded ? `This attempt: <strong>${previewScore}</strong> / 100 · predicted ${d.predicted} · Δ${Math.abs(previewScore - d.predicted)} ${previewScore < d.predicted ? "overconfident" : previewScore > d.predicted ? "underconfident" : "calibrated"}` : "Grade all six dimensions and the model-edge call to save.")
+        : att ? `Saved attempt: <strong>${att.score}</strong> / 100 · predicted ${att.predicted} · Δ${Math.abs(att.score - att.predicted)}` : ""}</span>
       ${live ? `<button class="btn btn-primary" data-action="save-attempt" ${graded ? "" : "disabled"}>Save attempt</button>`
              : `<button class="btn btn-outline" data-tab="answer">Start new attempt</button>`}
     </div>`;
@@ -937,11 +942,6 @@
     <div class="synth-core">
       <span>Ultimate synthesis</span>
       <p>${esc(p.expected.nextMove)}</p>
-    </div>
-
-    <div class="adversarial">
-      <span>Adversarial critique — the tempting wrong answers</span>
-      <p>${esc(p.adversarial)}</p>
     </div>
 
     <h3 class="sec-title">Altitude rewrites <span class="note">same judgment, three rooms</span></h3>
@@ -1007,6 +1007,7 @@
         <div class="score-meta">
           <span>${STATUS_LABEL[st]}</span>
           <strong>${atts.length ? `best ${bestScore(p.id)} · ${atts.length} attempt${atts.length > 1 ? "s" : ""}` : "no attempts yet"}</strong>
+          ${last ? `<span style="margin-top:4px">predicted ${last.predicted} · Δ${Math.abs(last.score - last.predicted)}</span>` : ""}
           <span style="margin-top:4px">next review: ${due.text}</span>
         </div>
       </div>
@@ -1432,7 +1433,9 @@
     repTabs[pid] = "synthesis";
     save();
     const nextIn = INTERVALS[mm.reviewIdx];
-    const parts = [`Saved — ${score}/100.`];
+    const delta = Math.abs(attempt.predicted - score);
+    const calib = delta <= 5 ? "well calibrated" : attempt.predicted > score ? `overconfident by ${delta}` : `underconfident by ${delta}`;
+    const parts = [`Saved — ${score}/100. You predicted ${attempt.predicted} — ${calib}.`];
     if (statusOf(pid) === "mastered") parts.push("Mastered.");
     parts.push(`Next review in ${nextIn}d.`);
     toast(parts.join(" "));
